@@ -1,0 +1,21 @@
+body {
+	background-color: #edf2f4;
+}
+.mb-100 {
+	margin-bottom: 65px;
+}
+footer {
+	background-color: #495057;
+	color: #d9d9d9;
+}
+a.links_footer, a.links_footer:visited {
+	color: #d9d9d9;
+}
+a:visited {
+	color: inherit;
+}
+
+.btn-group-toggle {
+	min-width: 144px;
+}
+

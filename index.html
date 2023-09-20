@@ -1,0 +1,220 @@
+ <!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+        <title>Creditos Incertidumbre</title>
+    </head>
+
+    <body>
+
+        <div class="container mb-100">
+            <div class="col-12">
+                <div class="card-deck">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 22rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Créditos hipotecarios</h5>
+                            <p class="card-text text-center">Somos el primer banco de Chile con solicitud de Hipotecario en línea.</p>
+                        </div>
+                    </div>     
+                    <div class="card text-white bg-dark mb-3" style="max-width: 22rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Tú elijes cuánto</h5>
+                            <p class="card-text text-center">Paga tu Crédito Hipotecario con tasa fija hasta 80% de financiamiento.</p>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-dark mb-3" style="max-width: 22rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Siempre informado</h5>
+                            <p class="card-text text-center">Te mantendremos informado. Recibirás notificaciones en cada etapa del proceso.</p>
+                        </div>
+                    </div>     
+                </div>     
+            </div>
+        </div>
+
+        <div class="container mb-100">
+            <div class="row no-gutters mt-5 mb-5">
+                <div class="col-12"> 
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <form action="#" method="GET" id="">
+                                <div class="row">
+                                    
+                                    <div class="col-12 mb-5 text-center">
+                                        <h1>Simula tu Crédito con nosotros</h1>
+                                        <p>Simula tu crédito Hipotecario, y comienza a vivir el hogar de tus sueños.</p>
+                                    </div>
+
+                                    <div class="col-6"> 
+                                        <div class="row">
+                                            <div class="col-6"> 
+                                                <div class="form-group mb-4">
+                                                    <label for="tipo"><i class="bi bi-house-heart text-danger"></i>  Tipo de Vivienda</label>
+                                                    <div class="form-group">
+                                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                            <label class="btn btn-outline-danger active">
+                                                                <input class="form-control" type="radio" name="tipo" id="tipo1" checked> Nueva
+                                                            </label>
+                                                            <label class="btn btn-outline-danger">
+                                                                <input class="form-control" type="radio" name="tipo" id="tipo2"> Usada
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-4">
+                                                <label for="pesosOuf"><i class="bi bi-cash-coin text-danger"></i>  UF o Pesos chilenos</label>
+                                                <div class="form-group">
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-outline-danger active">
+                                                            <input class="form-control" type="radio" name="pesosOuf" id="uf" value="uf" checked>UF
+                                                        </label>
+                                                        <label class="btn btn-outline-danger">
+                                                            <input class="form-control" type="radio" name="pesosOuf" id="pesos" value="pesos">CLP
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <label for="vVivienda"><i class="bi bi-cash text-danger"></i>  Valor de la propiedad</label>
+                                            <input type="number" name="vVivienda" id="vVivienda" class="form-control" placeholder="valor total del inmueble">
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <label for="montoC"><i class="bi bi-clipboard-check text-danger"></i>  Monto Credito</label>
+                                            <input type="number" name="montoC" id="montoC" class="form-control" placeholder="hasta el 80% del valor del inmueble">
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <label for="años"><i class="bi bi-calendar-event text-danger"></i>  Plazo Años</label>
+                                            <input type="number" name="años" id="años" class="form-control" placeholder="máximo hasta 20 años">
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="col-6 mb-5">
+                                        <img class="mx-auto d-block" src="https://w2.internacional.cl/uploads/e5abf5a58afd4462ade1ed68b70ac469_2c260d4c18.png" height="" width="" alt="HOGAR DULCE">
+                                    </div>
+                                    
+                                    <div class="col">
+                                        <div class="row justify-content-center">
+                                            <div class="col-6">
+                                                <div class="form-group" id="botoncito">
+                                                    <button type="button" onclick="calculos()" class="btn btn-danger btn-block">CALCULAR</button>
+                                                </div>
+                                            </div> 
+                                        </div>  
+                                    </div> 
+
+                                    <div class="col-12">
+                                        <div class="text-center d-none" id="resultado">
+                                            <p></p>
+                                            <h3>El total a pagar será de <span id="total">X</span> en <span id="cCuotas">X</span> cuotas.</h3>
+                                            <div class="row">
+                                                <div class="col-3">
+                                                </div>
+                                                <div class="col-6 mt-5">
+                                                    <div class="form-group">
+                                                        <button type="button" onclick="location.reload()" id="refresh" class="btn btn-danger btn-block">VOLVER A SIMULAR</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        </div>
+
+        <div class="container mb-100">
+            <div class="col-12">
+                <div class="card-deck">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 22rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Simulador de Créditos</h5>
+                            <p class="card-text text-center">Este simulador no corresponde a una pre-aprobación comercial en línea.</p>
+                        </div>
+                    </div>     
+                    <div class="card text-white bg-dark mb-3" style="max-width: 22rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">¿Necesitas ayuda?</h5>
+                            <p class="card-text text-center">Contácta a nuestros ejecutivos vía Whatsapp las 24 horas del día +56945121684</p>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-dark mb-3" style="max-width: 22rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">No estás sol@</h5>
+                            <p class="card-text text-center">Puedes complementar renta con un familiar directo y contarás con apoyo de ejecutivos expertos.</p>
+                        </div>
+                    </div>     
+                </div>     
+            </div>
+        </div>
+
+        <footer>
+            <div class="p-3 mb-2 bg-transparent text-white">
+                <div class="container">
+                   <div class="row mb-2 mt-5">
+                        <div class="col">
+                            <h5>Nosotros</h5>
+                        </div>
+                        <div class="col">
+                            <h5>Te puede servir</h5>
+                        </div>
+                        <div class="col">
+                            <h5>Te ayudamos</h5>
+                        </div>
+                        <div class="col">
+                            <h5>Encuentranos en RRSS</h5>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <ul>
+                                <li><a class="links_footer" href="#">Quiénes somos</a></li>
+                                <li><a class="links_footer" href="#">Administración</a></li>
+                                <li><a class="links_footer" href="#">Documentos Legales</a></li>
+                            </ul>  
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li><a class="links_footer" href="#">Tasas y Tarifas</a></li>
+                                <li><a class="links_footer" href="#">Portabilidad Financiera</a></li>
+                                <li><a class="links_footer" href="#">Términos del Servicio</a></li>
+                                <li><a class="links_footer" href="#">Reclamos</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li><a class="links_footer" href="#">Preguntas Frecuentes</a></li>
+                                <li><a class="links_footer" href="#">Tutoriales Digitales</a></li>
+                                <li><a class="links_footer" href="#">Ayuda</a></li>
+                                <li><a class="links_footer" href="#">Contacto</a></li> 
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li><a class="links_footer" href="#">Facebook</a></li>
+                                <li><a class="links_footer" href="#">YouTube</a></li>
+                                <li><a class="links_footer" href="#">Instagram</a></li>
+                                <li><a class="links_footer" href="#">Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/javascript.js"></script>
+    </body>
+
+</html>
